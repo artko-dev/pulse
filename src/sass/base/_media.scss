@@ -1,0 +1,153 @@
+@media (max-width: 1280px) {
+   .promo {
+      padding: 20px 5px 50px 5px;
+   }
+}
+
+@media (max-width: 993px) {
+   .promo {
+      padding: 20px 10px 50px 10px;
+   }
+}
+
+@media (max-width: 769px) {
+   .promo {
+      padding: 20px 15px 50px 15px;
+      &__expo {
+            text-align: center;
+            margin-top: 140px;
+         }
+      &__title {
+         font-size: 28px;
+         line-height: 32px;
+      }
+      &__subTitle {
+         margin-top: 40px;
+         line-height: 24px;
+      }
+      &__wrapper {
+         margin: 0 auto;
+         padding-top: 90px;
+      }
+
+      &__consult {
+         margin-top: 95px;
+      }
+
+      &__desc {
+         font-size: 14px;
+      }
+
+      &__link {
+         margin-top: 20px;
+         font-size: 18px;
+      }
+   }
+   .header {
+      &__logo {
+         width: 200px
+      }
+      &__phone {
+         font-size: 14px;
+      }
+   }
+   .button {
+      width: 130px;
+      height: 25px;
+      font-size: 10px;
+
+      &__main {
+         width: 303px;
+         height: 54px;
+         font-size: 20px;
+      }
+   }
+   .adv {
+      //margin-bottom: 40px;
+      &__items {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}
+
+@media (max-width: 577px) {
+   .promo {
+      padding: 20px 20px 50px 20px;
+   }
+   .header{
+      &__official {
+            display: none;
+         }
+      &__logo {
+         width: 180px
+      }
+      &__phone {
+         font-size: 14px;
+      }
+   }
+   .button {
+      width: 130px;
+      height: 20px;
+      font-size: 10px;
+      &__main {
+         width: 303px;
+         height: 54px;
+         font-size: 20px;
+      }
+   }
+}
+@media (max-width: 320px) {
+   .promo {
+      padding: 20px 0 36px 0;
+      &__expo {
+         margin-top: 30px;
+      }
+      &__title {
+         margin-top: 50px;
+         font-size: 22px;
+      }
+      &__subTitle {
+         margin-top: 10px;
+         font-size: 14px;
+      }
+      &__wrapper {
+         flex-direction: column;
+         align-items: center;
+         margin-top: 25px;
+         padding: 0;
+      }
+      &__items {
+         margin-top: 25px;
+      }
+      &__consult {
+         margin-top: 50px;
+      }
+      &__link {
+         font-size: 14px;
+      }
+   }
+   .header {
+      display: flex;
+      flex-direction: column;
+      &__official {
+         display: none;
+      }
+      &__phone {
+         margin-top: 10px;
+      }
+      &__logo {
+         padding: 0 10px 0 0;
+      }
+   }
+   .button {
+      width: 130px;
+      height: 20px;
+      font-size: 10px;
+      &__main {
+         width: 260px;
+         height: 54px;
+         font-size: 18px;
+      }
+   }
+}

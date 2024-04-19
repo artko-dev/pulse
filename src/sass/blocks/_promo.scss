@@ -1,0 +1,62 @@
+.promo {
+   //     -----     -----     Main rules
+   padding: 20px 0 50px 0;
+   min-height: 650px;
+   background: url(../img/maineBg.png) center (center/cover) no-repeat;
+   color: #ffff;
+   //     -----     -----     H1 & H2 text
+   &__expo {
+      text-align: right;
+      margin-top: 128px;
+   }
+   &__title {
+      font-size: calc(22px + 8 * ((100vw - 320PX) / 1280));
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 24px;
+   }
+   &__subTitle {
+      margin-top: 17px;
+      font-size: calc(16px + 4 * ((100vw - 320px) / 1280));
+      line-height: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+   }
+   //     -----     -----    icons
+   &__wrapper {
+      max-width: 425px;
+      display: flex;
+      justify-content: space-between;
+      align-items:first baseline;
+      margin-left: auto;
+      margin-top: 65px;
+   }
+   &__items {
+      max-width: 140px;
+      text-align: center;
+   }
+   &__icons {
+      img {
+         width: 108px;
+      }
+   }
+   &__desc {
+      margin-top: 5px;
+      font-size: calc(10px + 6 * ((100vw - 320px) / 1280));
+   }
+   //     -----        -----     go to catalog
+   &__consult {
+      margin-top: 108px;
+   }
+   &__link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: calc(12px + 4 * ((100vw - 320px) / 1280));
+      line-height: 25px;
+      a {
+         display: inline-block;
+         margin-top: 10px;
+         color: #fff;
+      }
+   }
+}

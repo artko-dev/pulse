@@ -1,0 +1,16 @@
+.button {
+   width: 150px;
+   height: 30px;
+   border-radius: 5px;
+   background-color: $main-color;
+   border: none;
+   color: #ffffff;
+   font-size: calc(10 + 2 * ((100vw - 320px) / 1280));
+   font-weight: 500;
+   text-transform: uppercase;
+   &__main {
+      width: 303px;
+      height: 54px;
+      font-size: 20px;
+   }
+}

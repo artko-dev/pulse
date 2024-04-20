@@ -17,7 +17,7 @@ body {
 
 .title {
    /* Title for blocks */
-   font-size: calc(16px + 8 * ((100vw - 320px) / 1280));
+   font-size: calc(20px + 4 * ((100vw - 320px) / 1280));
    line-height: 24px;
    font-weight: 700;
    text-align: center;
@@ -29,4 +29,6 @@ body {
 @import 'blocks/buttons'; /* Rules for buttons */
 /* Second container */
 @import 'blocks/advantages'; /* Maine rules for the second container */
-@import 'base/media'
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'base/media';

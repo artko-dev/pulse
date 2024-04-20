@@ -1,5 +1,5 @@
 .adv {
-   padding: 70px 0 80px 0;
+   padding: 70px 15px 80px 15px;
    min-height: 470px;
    background-color: #f6f6f6;
    &__items {
@@ -9,7 +9,9 @@
    }
    &__item {
       text-align: center;
-      max-width: 225px;
+      max-width: 280px;
+      justify-content: center;
+      align-self: flex-start;
    }
    &__icon {
       display: inline-block;
@@ -21,13 +23,13 @@
    }
    h3 {
       margin-top: 38px;
-      font-size: calc(16px + 4 * ((100vw - 320px) / 1280));
+      font-size: calc(18px + 2 * ((100vw - 320px) / 1280));
       font-weight: 700;
       color: #0d0d0d;
    }
    &__desc {
       margin-top: 26px;
-      font-size: calc(10px + 3 * ((100vw - 320px) / 1280));
+      font-size: calc(12px + 1 * ((100vw - 320px) / 1280));
       line-height: 16px;
       font-weight: 300;
    }

@@ -1,0 +1,23 @@
+.consult {
+   //padding-top: 90px;
+   height: 680px;
+   background: url(../img/bg2.png) center (center/cover) no-repeat;
+   color: #fff;
+   &__title{
+      padding-top: 90px;
+      text-align: left;
+      font-size: calc(20px + 16 * ((100vw - 320px) / 1280));
+      line-height: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+   &__subTitle {
+      font-size: calc(16px + 4 * ((100vw - 320px) / 1280));
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 32px;
+   }
+   &__form {
+      padding-top: 15px;
+   }
+}

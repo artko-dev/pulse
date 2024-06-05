@@ -13,6 +13,7 @@ body {
    /* Main contents placed in container */
    max-width: 950px;
    margin: 0 auto;
+   position: relative;
 }
 
 .title {
@@ -31,4 +32,6 @@ body {
 @import 'blocks/advantages'; /* Maine rules for the second container */
 @import 'blocks/consultation';
 @import 'blocks/forms';
+@import 'blocks/slider';
+@import 'blocks/product';
 @import 'base/media';

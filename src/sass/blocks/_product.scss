@@ -8,8 +8,9 @@
       list-style-type: none;
    }
    &__tabs {
-      margin-top: 70px;
+      margin-top: 60px;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       padding-left: 0;
@@ -23,8 +24,9 @@
          line-height: 48px;
          text-align: center;
          margin: 0 5px;
-         font-size: 18px;
+         font-size: calc(12px + 6 * ((100vw - 320px) / 1280));
          color: #6b6b6b;
+         margin-top: 10px;
          cursor: pointer;
          transition: 0.2s all;
          transform: skew(-20deg);
@@ -44,6 +46,7 @@
    &__items {
       display: none;
       justify-content: space-between;
+      margin: 0 auto;
       &_active {
          display: flex;
       }
@@ -75,12 +78,12 @@
       &-title {
          font-weight: 700;
          margin-top: 20px;
-         font-size: 16px;
+         font-size: calc(14px + 2  * ((100vw - 320px) / 1280));
          color: #0d0d0d;
       }
       &-link {
          display: block;
-         font-size: 14px;
+         font-size: calc(12px + 2 * ((100vw - 320px) / 1280));
          font-weight: 500;
          padding-top: 17px;
          text-decoration: underline;
@@ -93,7 +96,7 @@
       &-desc {
          margin: 0 auto;
          padding-top: 16px;
-         font-size: 14px;
+         font-size: calc(12px + 2 * ((100vw - 320px) / 1280));
          font-weight: 300;
          width: 250px;
       }
@@ -104,7 +107,7 @@
          align-items: center;
       }
       &-old {
-         font-size: 14px;
+         font-size: calc(14px + 2 * ((100vw - 320px) / 1280));
          color: #555555;
          text-align: left;
          text-decoration: line-through;
@@ -112,7 +115,7 @@
       }
       &-price {
          color: #050505;
-         font-size: 20px;
+         font-size: calc(16px + 6 * ((100vw - 320px) / 1280));
          font-weight: 700;
       }
       &-footer {
@@ -122,12 +125,13 @@
    }
    &__list {
       list-style-type: square;
-      width: 250px;
+      max-width: 250px;
       margin-top: 20px;
-      font-size: 14px;
+      font-size: calc(12px + 2 * ((100vw - 320px) / 1280));
       font-weight: 300;
       line-height: 28px;
-      padding-bottom: 41px;
+      padding: 0 5px 41px 25px;
+      padding-right: 5px;
       color: $main-color;
    }
    li span {
@@ -140,7 +144,6 @@
       }
       &__content {
          width: 50%;
-         //transform: translateX(100%);
          &_active {
             width: 50%;
             transform: translateX(100%);
@@ -150,8 +153,7 @@
          position: relative;
          width: 50%;
          &_active {
-            transform: translateX(-105%);
-            
+            transform: translateX(-100%);
          }
       }
       &_active {
@@ -166,8 +168,5 @@
    &__content {
       display: flex;
       flex-wrap: wrap;
-      //&_active {
-      //   display: flex;
-      //}
    }
 }

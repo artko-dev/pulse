@@ -11,7 +11,7 @@
    &_main {
       width: 303px;
       height: 54px;
-      font-size: calc(18px + 2 * ((100vw - 320px) / 1280));
+      font-size: calc(14px + 2 * ((100vw - 320px) / 1280));
    }
    &_submit {
       width: 100%;
@@ -21,6 +21,6 @@
    &_product {
       width: 135px;
       height: 44px;
-      font-size: 14px;
+      font-size: calc(12px + 2 * ((100vw - 320px) / 1280));
    }
 }

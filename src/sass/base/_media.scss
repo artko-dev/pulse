@@ -6,6 +6,9 @@
             width: 100%;
             height: 54px;
          }
+         &_product {
+            height: 44px;
+         }
       }
 }
 
@@ -33,9 +36,19 @@
    .next, .prev {
       display: none;
    }
-   //.slider {
-   //   max-width: 760px;
-   //}
+   .product {
+      &__item {
+         width: 255px;
+         hr {
+            width: 230px;
+         }
+      }
+   }
+   .button {
+      &_product {
+         width: 120px;
+      }
+   }
 }
 
 @media (max-width: 769px) {
@@ -82,6 +95,10 @@
             width: 100%;
             height: 54px;
          }
+      &_product {
+         width: 135px;
+         height: 44px;
+      }
    }
    .adv {
       &__items {
@@ -93,7 +110,28 @@
          margin-bottom: 20px;
       }
    }
+   .product {
+      &__tab {
 
+      }
+      &__items {
+         &_active {
+            display: block;
+         }
+      }
+      &__item {
+         width: 300px;
+         hr {
+            width: 260px;
+         }
+      }
+      button {
+         &_product {
+            width: 135px;
+            height: 44px;
+         }
+      }
+   }
 }
 
 @media (max-width: 577px) {
@@ -117,6 +155,9 @@
       &_main, &_submit {
          width: 100%;
          height: 54px;
+      }
+      &_product {
+         height: 44px;
       }
    }
    .consult {
@@ -172,6 +213,23 @@
          padding: 0 10px 0 0;
       }
    }
+   .product {
+      &__tabs {
+         padding: 0 10px;
+      }
+      &__tab {
+         width: 220px;
+      }
+      &__item {
+         width: 235px;
+         &-desc {
+            max-width: 220px;
+         }
+         hr {
+            max-width: 200px;
+         }
+      }
+   }
    .button {
       width: 130px;
       height: 20px;
@@ -179,6 +237,10 @@
          padding: 0 10px;
          width: 100%;
          height: 54px;
+      }
+      &_product {
+         height: 40px;
+         width: 110px;
       }
    }
    .consult {

@@ -111,9 +111,6 @@
       }
    }
    .product {
-      &__tab {
-
-      }
       &__items {
          &_active {
             display: block;
@@ -125,11 +122,23 @@
             width: 260px;
          }
       }
-      button {
+      .button {
          &_product {
             width: 135px;
             height: 44px;
          }
+      }
+   }
+   .review {
+      &__item {
+         display: block;
+      }
+      &__img {
+         margin: 0 auto;
+         padding-bottom: 15px;
+      }
+      &__author, &__notice {
+         text-align: center;
       }
    }
 }

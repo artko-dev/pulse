@@ -1,0 +1,29 @@
+.review {
+   &__items {
+      max-width: 880px;
+      margin-left: 30px;
+   }
+   &__item {
+      padding: 60px 30px 0 0;
+      display: flex;
+   }
+   &__img {
+      margin-right: 60px;
+      width: 169px;
+      height: 169px;
+   }
+   &__author {
+      font-size: calc(14px + 4 * ((100vw - 320px) / 1280));
+      font-weight: 500;
+   }
+   &__notice {
+      font-size: calc(10px + 4 * ((100vw - 320px) / 1280));
+      font-weight: 300;
+      color: #646464;
+   }
+   &__desc {
+      padding-top: 10px;
+      font-size: calc(12px + 4 * ((100vw - 320px) / 1280));
+      font-weight: 300;
+   }
+}

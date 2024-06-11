@@ -18,10 +18,11 @@ body {
 
 .title {
    /* Title for blocks */
-   font-size: calc(20px + 4 * ((100vw - 320px) / 1280));
+   font-size: calc(20px + 10 * ((100vw - 320px) / 1280));
    line-height: 24px;
    font-weight: 700;
    text-align: center;
+   text-transform: uppercase;
 }
 
 /* First section */
@@ -34,4 +35,6 @@ body {
 @import 'blocks/forms';
 @import 'blocks/slider';
 @import 'blocks/product';
+@import 'blocks/review';
+@import 'blocks/footer';
 @import 'base/media';

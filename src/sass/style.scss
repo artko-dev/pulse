@@ -25,16 +25,23 @@ body {
    text-transform: uppercase;
 }
 
+
 /* First section */
 @import 'blocks/promo'; /* Maine rules for the first section */
 @import 'blocks/header'; /* Header in first section */
 @import 'blocks/buttons'; /* Rules for buttons */
 /* Second container */
 @import 'blocks/advantages'; /* Maine rules for the second container */
-@import 'blocks/consultation';
-@import 'blocks/forms';
-@import 'blocks/slider';
-@import 'blocks/product';
-@import 'blocks/review';
-@import 'blocks/footer';
+/* Third container */
+@import 'blocks/consultation'; /* Maine rules for the third container */
+@import 'blocks/forms'; /* Maine rules for the forms + modal forms */
+/* Fourth container */
+@import 'blocks/slider'; /* Maine rules for the slider */
+/* Fifth container */
+@import 'blocks/product'; /* Maine rules for the product cards */
+/* Sixth container */
+@import 'blocks/review'; /* Maine rules for the review */
+/* Sixth container */
+@import 'blocks/footer'; /* Maine rules for the footer - map + address */
+/* Media rules */
 @import 'base/media';

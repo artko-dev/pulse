@@ -141,6 +141,13 @@
          text-align: center;
       }
    }
+   .footer {
+      &__desck {
+         width: 245px;
+         height: 130px;
+         padding-top: 25px;
+      }
+   }
 }
 
 @media (max-width: 577px) {

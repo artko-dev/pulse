@@ -15,6 +15,7 @@
       img {
          width: 31px;
          height: 50px;
+         cursor: pointer;
       }
    }
    .next {
@@ -35,12 +36,11 @@
    .tns-nav {
       position: absolute;
       left: 50%;
+      transform: translateX(-50%);
       
       button {
          background-color: rgb(252, 0, 0);
          border-color: #fff;
-         //border-radius: 50%;
-         //border: none;
          width: 12px;
          height: 12px;
          &:hover {
@@ -50,6 +50,7 @@
       }
       .tns-nav-active {
          background-color: rgb(175, 63, 63);
+         cursor: pointer;
       }
    }
 }

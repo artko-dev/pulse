@@ -28,4 +28,7 @@
       height: 44px;
       font-size: calc(12px + 2 * ((100vw - 320px) / 1280));
    }
+   &_form {
+      margin-top: 18px;
+   }
 }

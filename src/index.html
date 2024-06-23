@@ -24,7 +24,9 @@
             <a href="tel:+11111111111" class="header__phone">
               +1 (234) 567-89-01</a
             >
-            <button class="button">Request a call</button>
+            <button data-modal="consultation" class="button">
+              Request a call
+            </button>
           </div>
         </header>
         <div class="promo__expo">
@@ -59,7 +61,9 @@
             </div>
           </div>
           <div class="promo__consult">
-            <button class="button button_main">order a consultation</button>
+            <button data-modal="consultation" class="button button_main">
+              order a consultation
+            </button>
             <div class="promo__link">or <a href="">GO TO CATALOG</a></div>
           </div>
         </div>
@@ -129,16 +133,18 @@
           Just fill out the application form and we will call you back <br />
           within 10 minutes
         </h3>
-        <form method="post" action="#" class="feed__form">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input
-            type="phone"
-            name="number"
-            placeholder="Phone number"
-            required
-          />
-          <input type="email" name="email" placeholder="Your E-mail" required />
-          <button class="button button_main">order a consultation</button>
+        <form
+          id="consultation-form"
+          method="post"
+          action="#"
+          class="feed__form"
+        >
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="phone" name="number" placeholder="Phone number" />
+          <input type="email" name="email" placeholder="Your E-mail" />
+          <button class="button button_main button_form">
+            order a consultation
+          </button>
         </form>
       </div>
     </section>
@@ -248,7 +254,65 @@
                     class="product__item-img"
                   />
                   <h3 class="product__item-title">
-                    Heart rate monitor Polar FT1
+                    Heart rate monitor Suunto M2
+                  </h3>
+                  <p class="product__item-desc">
+                    For your first steps in heart rate based training
+                  </p>
+                  <a href="#" class="product__item-link product-item__more"
+                    >MORE DETAILS</a
+                  >
+                </div>
+                <div class="product-item__list">
+                  <ul class="product__list">
+                    <li class="product__description">
+                      <span>
+                        You will hear a sound alert about the desired heart rate
+                        during training;
+                      </span>
+                    </li>
+                    <li class="product__description">
+                      <span>
+                        You will see an informative graphical indicator of
+                        target training heart rate zones;
+                      </span>
+                    </li>
+                    <li class="product__description">
+                      <span>
+                        You will also see information about calorie consumption
+                        during the workout;
+                      </span>
+                    </li>
+                    <li class="product__description">
+                      <span>You can view data for 10 workouts.</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="product__item-link product-item__less">
+                    Less DETAILS
+                  </a>
+                </div>
+              </div>
+              <div class="product__item-footer">
+                <hr />
+                <div class="product__item-buyer">
+                  <div class="product__item-prices">
+                    <div class="product__item-old">CA 150$</div>
+                    <div class="product__item-price">CA 120$</div>
+                  </div>
+                  <button class="button button_product">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="product-item__wrapper">
+                <div class="product-item__content">
+                  <img
+                    src="/img/watches/other.png"
+                    alt="pulse rate"
+                    class="product__item-img"
+                  />
+                  <h3 class="product__item-title">
+                    Heart rate monitor Polar FT4
                   </h3>
                   <p class="product__item-desc">
                     For your first steps in heart rate based training
@@ -307,6 +371,122 @@
                   />
                   <h3 class="product__item-title">
                     Heart rate monitor Polar FT1
+                  </h3>
+                  <p class="product__item-desc">
+                    For your first steps in heart rate based training
+                  </p>
+                  <a href="#" class="product__item-link product-item__more"
+                    >MORE DETAILS</a
+                  >
+                </div>
+                <div class="product-item__list">
+                  <ul class="product__list">
+                    <li class="product__description">
+                      <span>
+                        You will hear a sound alert about the desired heart rate
+                        during training;
+                      </span>
+                    </li>
+                    <li class="product__description">
+                      <span>
+                        You will see an informative graphical indicator of
+                        target training heart rate zones;
+                      </span>
+                    </li>
+                    <li class="product__description">
+                      <span>
+                        You will also see information about calorie consumption
+                        during the workout;
+                      </span>
+                    </li>
+                    <li class="product__description">
+                      <span>You can view data for 10 workouts.</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="product__item-link product-item__less">
+                    Less DETAILS
+                  </a>
+                </div>
+              </div>
+              <div class="product__item-footer">
+                <hr />
+                <div class="product__item-buyer">
+                  <div class="product__item-prices">
+                    <div class="product__item-old">CA 150$</div>
+                    <div class="product__item-price">CA 120$</div>
+                  </div>
+                  <button class="button button_product">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="product-item__wrapper">
+                <div class="product-item__content">
+                  <img
+                    src="/img/watches/other.png"
+                    alt="pulse rate"
+                    class="product__item-img"
+                  />
+                  <h3 class="product__item-title">
+                    Heart rate monitor Suunto M2
+                  </h3>
+                  <p class="product__item-desc">
+                    For your first steps in heart rate based training
+                  </p>
+                  <a href="#" class="product__item-link product-item__more"
+                    >MORE DETAILS</a
+                  >
+                </div>
+                <div class="product-item__list">
+                  <ul class="product__list">
+                    <li class="product__description">
+                      <span>
+                        You will hear a sound alert about the desired heart rate
+                        during training;
+                      </span>
+                    </li>
+                    <li class="product__description">
+                      <span>
+                        You will see an informative graphical indicator of
+                        target training heart rate zones;
+                      </span>
+                    </li>
+                    <li class="product__description">
+                      <span>
+                        You will also see information about calorie consumption
+                        during the workout;
+                      </span>
+                    </li>
+                    <li class="product__description">
+                      <span>You can view data for 10 workouts.</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="product__item-link product-item__less">
+                    Less DETAILS
+                  </a>
+                </div>
+              </div>
+              <div class="product__item-footer">
+                <hr />
+                <div class="product__item-buyer">
+                  <div class="product__item-prices">
+                    <div class="product__item-old">CA 150$</div>
+                    <div class="product__item-price">CA 120$</div>
+                  </div>
+                  <button class="button button_product">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="product-item__wrapper">
+                <div class="product-item__content">
+                  <img
+                    src="/img/watches/other.png"
+                    alt="pulse rate"
+                    class="product__item-img"
+                  />
+                  <h3 class="product__item-title">
+                    Heart rate monitor Polar FT4
                   </h3>
                   <p class="product__item-desc">
                     For your first steps in heart rate based training
@@ -426,7 +606,7 @@
                     class="product__item-img"
                   />
                   <h3 class="product__item-title">
-                    Heart rate monitor Polar FT1
+                    Heart rate monitor Polar FT4
                   </h3>
                   <p class="product__item-desc">
                     For your first steps in heart rate based training
@@ -475,7 +655,6 @@
                 </div>
               </div>
             </div>
-            <div class="product__item"></div>
             <div class="product__item">
               <div class="product-item__wrapper">
                 <div class="product-item__content">
@@ -657,8 +836,42 @@
         </div>
       </div>
     </footer>
+    <div class="overlay">
+      <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__title">Just fill out the application form</div>
+        <div class="modal__subtitle">
+          and we will call you back within 10 minutes
+        </div>
+        <form method="post" action="#" class="feed__form feed__form_modal">
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="phone" name="number" placeholder="Phone number" />
+          <input type="email" name="email" placeholder="Your E-mail" />
+          <button class="button button_main button_form">
+            order a consultation
+          </button>
+        </form>
+      </div>
+      <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <div class="modal__title">Your order</div>
+        <div class="modal__subtitle">Polar FT1 heart rate monitor</div>
+        <form method="post" action="#" class="feed__form feed__form_modal">
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="phone" name="number" placeholder="Phone number" />
+          <input type="email" name="email" placeholder="Your E-mail" />
+          <button class="button button_main button_form">Place order</button>
+        </form>
+      </div>
+      <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__title">Thank you for your application!</div>
+        <div class="modal__subtitle">Our manager will contact you soon!</div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

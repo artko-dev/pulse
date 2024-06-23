@@ -49,6 +49,7 @@
       margin: 0 auto;
       &_active {
          display: flex;
+         flex-wrap: wrap;
       }
    }
    &__item {

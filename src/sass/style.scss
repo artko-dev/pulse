@@ -29,7 +29,6 @@ body {
 /* First section */
 @import 'blocks/promo'; /* Maine rules for the first section */
 @import 'blocks/header'; /* Header in first section */
-@import 'blocks/buttons'; /* Rules for buttons */
 /* Second container */
 @import 'blocks/advantages'; /* Maine rules for the second container */
 /* Third container */
@@ -43,5 +42,9 @@ body {
 @import 'blocks/review'; /* Maine rules for the review */
 /* Sixth container */
 @import 'blocks/footer'; /* Maine rules for the footer - map + address */
+/* Rules for buttons */
+@import 'blocks/buttons';
+/* Modal window rules */
+@import 'blocks/modal';
 /* Media rules */
 @import 'base/media';

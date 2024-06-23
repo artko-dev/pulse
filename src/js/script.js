@@ -1,4 +1,4 @@
-
+// Tiny Slider
    const slider = tns({
       container: '.slider__carousel',
       items: 1,
@@ -18,12 +18,15 @@
          }
       }
    });
+   // Arrows for Slider
    document.querySelector('.prev').addEventListener('click', function () {
       slider.goTo('prev');
    });
    document.querySelector('.next').addEventListener('click', function () {
       slider.goTo('next');
    });
+
+   // Tabs
 $(document).ready(function () {
    $('ul.product__tabs').on('click', 'li:not(.product__tab_active)', function () {
       $(this)
@@ -38,6 +41,7 @@ $(document).ready(function () {
       })
    });
 
+   // Items
    $('.product-item__less').each(function (i) {
       $(this).on('click', function (e) {
          e.preventDefault();
@@ -45,4 +49,43 @@ $(document).ready(function () {
          $('.product-item__list').eq(i).toggleClass('product-item__list_active');
       })
    });
+
+   // Modal
+   $('[data-modal=consultation]').on('click', function () {
+      $('.overlay, #consultation').fadeIn();
+   });
+   $('.button_product').on('click', function () {
+      $('.overlay, #order').fadeIn();
+   });
+
+   $('.modal__close').on('click', function () {
+      $('.overlay, #consultation, #order, #thanks').fadeOut();
+   });
+   $('.button_product').each(function (i) {
+      $(this).on('click', function () {
+         $('#order .modal__subtitle').text($('.product__item-title').eq(i).text());
+      });
+   });
+   // Validator
+   function valideForms(form) {
+      $(form).validate({
+      rules: {
+         name: {
+            required: true,
+            minlength: 2,
+         },
+         phone: {
+            required: true
+         },
+         email: {
+            required: true,
+            email: true
+         }
+      },
+   });
+   };
+   //$('#consultation form').validate();
+   valideForms('#order form');
+   valideForms('#consultation-form');
+   valideForms('#consultation form');
 });

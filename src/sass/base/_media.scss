@@ -188,6 +188,28 @@
    .feed__form {
       margin: 0 auto;
       margin-top: 40px;
+      width: 270px;
+   }
+   .overlay {
+      .modal {
+         width: 280px;
+         &__close {
+            right: 25px;
+            top: 20px;
+         }
+      }
+   }
+   .footer {
+      &__desck {
+         width: 210px;
+      }
+      &__icon-wrap {
+         img {
+            max-width: 1000%;
+         }
+         width: 46px;
+         height: 46px;
+      }
    }
 }
 @media (max-width: 321px) {
@@ -213,7 +235,7 @@
       }
       &__consult {
          margin-top: 15px;
-         width: 240px;
+         width: 215px;
       }
    }
    .header {
@@ -237,7 +259,7 @@
          width: 220px;
       }
       &__item {
-         width: 235px;
+         width: 210px;
          &-desc {
             max-width: 220px;
          }
@@ -251,18 +273,51 @@
       height: 20px;
       &_main, &_submit {
          padding: 0 10px;
-         width: 100%;
+         width: 99%;
          height: 54px;
       }
       &_product {
          height: 40px;
-         width: 110px;
+         width: 100px;
       }
    }
    .consult {
       padding: 0 2px;
+      &__title {
+         padding-top: 24px;
+      }
    }
    .feed__form {
-      width: 240px;
+      width: 210px;
+      &_modal {
+         width: 215px;
+         padding-top: 15px;
+      }
+   }
+   .overlay {
+      .modal {
+         width: 215px;
+         &__close {
+            right: 25px;
+            top: 20px;
+         }
+      }
+   }
+   .footer {
+      &__desck {
+         position: relative;
+         width: 188px;
+         padding: 50px 15px 56px;
+      }
+      &__social {
+         img {
+            padding-top: 5px;
+            max-width: 100%;
+         }
+      }
+      &__icon-wrap {
+         width: 32px;
+         height: 32px;
+      }
    }
 }

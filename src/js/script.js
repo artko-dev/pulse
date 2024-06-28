@@ -67,6 +67,7 @@ $(document).ready(function () {
       });
    });
    // Validator
+      //email and name
    function valideForms(form) {
       $(form).validate({
       rules: {
@@ -84,8 +85,11 @@ $(document).ready(function () {
       },
    });
    };
-   //$('#consultation form').validate();
    valideForms('#order form');
    valideForms('#consultation-form');
    valideForms('#consultation form');
+   
+      //phone
+   $('input[name=number]').mask("+1 (999) 999-99-99");
+
 });

@@ -37,5 +37,12 @@
       color: #ff0000;
       text-decoration: underline;
    }
+   .adv__icon_animated {
+      animation: hearbeat 1.5s  ease;
+      &:hover {
+         animation-play-state: running;
+         animation: hearbeat 1.5s ease infinite;
+      }
+   }
 }
 

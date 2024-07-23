@@ -1,0 +1,101 @@
+.created {
+   margin-top: -4px;
+   &__name {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 12px;
+   }
+   background-color: $main-color;
+}
+
+.brand {
+   padding-top: 15px;
+   padding-bottom: 15px;
+   &__border {
+      margin: 0 auto;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #000;
+      border-radius: 55px;
+      z-index: 6;
+      overflow: auto;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+            display: none;
+         }
+      &_animation {
+         animation: borderForward 2.5s;
+         animation-timing-function: ease;
+         }
+      &_active {
+         animation: borderBack 2.5s forwards;
+         animation-timing-function: ease;
+      }
+   }
+
+   &__wrap {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+
+   &__first {
+      display: block;
+      position: absolute;
+      font-family: "Bruno Ace SC", sans-serif;
+      padding: 0 5px;
+      z-index: 3;
+      top: -9px;
+      left: -19px;
+      &_animation {
+         animation: firstForward 2.5s;
+         animation-timing-function: ease;
+      }
+      &_active {
+         animation: firstBack 2.5s forwards;
+         animation-timing-function: ease;
+      }
+   }
+
+   &__k {
+      font-family: "Bruno Ace SC", sans-serif;
+      display: block;
+      overflow: auto;
+      position: absolute;
+      top: -9px;
+      left: -1px;
+      z-index: 4;
+      background-color: $main-color;
+      &_animation {
+         animation: lastNameForward 2.5s;
+         animation-timing-function: ease;
+      }
+      &_active {
+         animation: lastNameBack 2.5s forwards;
+         animation-timing-function: ease;
+      }
+   }
+
+   &__lastBack {
+      position: absolute;
+      left: 11px;
+      top: -25px;
+      width: 58px;
+      height: 50px;
+      //transform: translate(19%, -50%);
+      background-color: $main-color;
+      z-index: 4;
+      &_animation {
+         animation: lastForward 2.5s;
+         animation-timing-function: ease;
+      }
+      &_active {
+         animation: lastBack 2.5s forwards;
+         animation-timing-function: ease;
+      }
+   }
+}

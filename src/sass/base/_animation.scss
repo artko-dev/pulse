@@ -1,0 +1,82 @@
+@keyframes hearbeat {
+   from {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.4);
+   }
+   to {
+      transform: scale(1);
+   }
+}
+
+@keyframes borderForward {
+   0%{
+      width: 190px;
+   }
+   100% {
+      width: 50px;
+   }
+}
+@keyframes borderBack {
+   0% {
+         width: 50px;
+      }
+
+      100% {
+         width: 190px;
+      }
+}
+@keyframes firstForward {
+   0% {
+      left: -86px;
+   }
+
+   100% {
+      left: -19px;
+   }
+}
+@keyframes firstBack {
+   0% {
+      left: -19px;
+   }
+
+   100% {
+      left: -86px;
+   }
+}
+
+@keyframes lastNameForward {
+   0% {
+      left: -16px;
+   }
+   100% {
+      left: -1;
+   }
+}
+@keyframes lastNameBack {
+   0% {
+      left: -1;
+   }
+   100% {
+      left: -16px;
+   }
+}
+
+@keyframes lastForward {
+   0% {
+      left: 90px;
+   }
+   100% {
+      left: 11px;
+   }
+}
+@keyframes lastBack {
+   0% {
+      left: 11px;
+   }
+
+   100% {
+      left: 90px;
+   }
+}
